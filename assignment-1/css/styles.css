@@ -1,0 +1,134 @@
+html{
+    scroll-behavior: smooth;
+    background-color:lightgray /*for form section*/
+}
+/* based off pc gamer colors: red and black (with grey as a working complement to those colors */
+header{
+    background-color:black;
+    color:white;
+    font-family: "Libre Baskerville", serif; /* font used only for header and footer*/
+    font-weight: 900;
+}
+header h1{
+    padding: 10px 10px 30px 10px;
+    word-spacing: -2px;
+    font-size: 1.2em;
+}
+header span{
+    background-color: red;
+    padding: 3px;
+}
+header menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* to space out global nav with each entry */
+    list-style: none;
+    background-color: red;
+    padding: 10px 50px 10px;
+}
+
+li a{ /* only to be applied to global nav, not go back links */
+    text-shadow: 1px 2px 1px black;
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: red;
+    padding: 8.5px;
+}
+
+div a{ /* for go back links */
+    text-shadow: 1px 2px 1px black;
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    background-color: red;
+}
+
+a:hover{ /* to give some responsive feedback */
+    background-color: black;
+}
+
+section#banner{ /*masthead or banner section with a pixel font to appeal to the target audience */
+    font-family: "Jersey 15", arial;
+    color: white;
+    background-image: url("../images/controller.jpg");
+    height: 600px;
+    background-size: cover;
+}
+section#banner div{ /* parallex color on top to give the image a better look with some shading */
+    height:100%;
+    background-color: rgba(0, 0, 0,.3);
+}
+
+section#banner h2{
+    font-size: 3.2em;
+    padding: 25px 10px 5px;
+    text-shadow: 3px 2px 1px black;
+}
+section#banner p{
+    font-size: 1.5em;
+    padding: 5px 10px 5px;
+    width: 50%;
+    margin-bottom: 80px;
+}
+section:nth-child(3){ /* section below banner serving as a transition from image background to solid color of the form */
+    font-family: "Jersey 15", arial;
+    color: white;
+    background-color:black;
+    height: 100px;
+    font-size: 3.0em;
+    text-align: center;
+}
+form{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    left: 360px; /* to center the form, would do this differently after the last css lesson with margin: 0 auto */
+    font-size: 1.2em;
+	width: 720px;
+    padding: 30px 30px 30px 30px;
+	border: 2px solid black; /* to provide sharpness to the form's outline */
+    box-shadow: 0 4px 8px;
+    background-color: white; 
+    border-radius: 15px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-family: "Roboto", arial; /* used for the form as it should have a more professional look for data input */
+    font-weight: 900;
+}
+h3{
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: underline;
+}
+input{
+    font-size: 1.2em;
+}
+h3, label, input, select, button{ /* to space form content */
+    margin: 10px;
+}
+
+button {
+    background-color: red;
+    cursor: pointer;
+    margin-top: 3vh;
+    padding: 15px;
+    box-shadow: 0 5px 10px;
+    font-weight: 900;
+}
+
+form button:hover{ /* little bit of feedback when the button is hovered over */
+    background-color: crimson;
+}
+
+footer{
+    background-color: black;
+    font-family: "Libre Baskerville", serif;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 40px;
+}
